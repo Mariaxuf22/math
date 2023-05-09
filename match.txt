@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("a0");
+            int a0 = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("ak");
+            int ak = Convert.ToInt32(Console.ReadLine());
+            int a = a0;
+            while (a < ak)
+ 
+            {
+ 
+                double N = Math.Pow(x, 2) + Math.Sqrt(Math.Pow(a, 2) + Math.Cos(a) - Math.Pow(b, 2) / Math.Tan(a));
+                a = a + 1;
+                Console.WriteLine(a);
+                Console.WriteLine(N);
+            }
+           
+        }
+    }
+    
+}
